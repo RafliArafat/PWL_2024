@@ -62,4 +62,7 @@ Route::get('/posts/{post}/comments/{comment}', function($postId, $commentId){
 Route::get('/user/profile', function(){
     //
 })->name('profile');
+// name hanya sebagai alias, tidak dapat digunakan di URL
 
+Route::get('/greeting', [WelcomeController::class, 
+'greeting']);
