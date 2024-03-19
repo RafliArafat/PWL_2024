@@ -41,9 +41,9 @@ Route::resource('photos', PhotoController::class)->except([
 ]);
    
 
-// Route::get('/', function(){
-//     return 'Selamat Datang';
-// });
+Route::get('/', function(){
+    return view('welcome');
+});
 
 
 
